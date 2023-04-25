@@ -1,0 +1,91 @@
+const express = require('express');
+const app = express()
+const port = 3000
+const cors = require('cors')
+
+app.use(express.json());
+//app.use(bodyParser.json());
+app.use('/application', express.static('site'))
+//app.use(cors())
+
+let MongoClient = require('mongodb').MongoClient;
+let ServerApiVersion = require('mongodb').ServerApiVersion
+let mongodb = require('mongodb');
+
+//yn8EgzfktP1ugIkj
+//mongodb+srv://kine_db:yn8EgzfktP1ugIkj@cluster0.grvit4v.mongodb.net/test
+let url = "mongodb+srv://kine_db:yn8EgzfktP1ugIkj@cluster0.grvit4v.mongodb.net/test";
+
+const client = new MongoClient(url, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
+
+app.get('/questions', async (req, res, next) => {
+
+    try {
+      db = await client.connect(url);
+      let dbo = db.db("kine_api");
+      let datas = await dbo.collection("questions").find({}).toArray();
+      res.status(200).json(datas);
+    } catch(err) {
+      console.log(err);
+      res.status(500).json({ message: err })
+    }
+  
+  }
+);
+
+
+app.delete('/questions/:id', async(req,res, next) =>{
+    try{
+      let db = await client.connect(url);
+      let dbo = db.db("kine_api");
+      let data = await dbo.collection("questions").deleteOne({_id: new mongodb.ObjectId(req.params.id)});
+      res.status(200).json({data});
+    }
+    catch (err) {
+      console.log(err);
+      res.status(500).json({ ok: false });
+    }
+  }
+);
+
+app.put('/questions/:id',async(req, res, next) => {
+  let question = req.body;
+  question.statut = "set";
+  try {
+      let db = await client.connect(url);
+      let dbo = db.db("kine_api");
+      console.log(req.body)
+      let retour = await dbo.collection("questions").updateOne({ _id: new mongodb.ObjectId(question._id) }, { $set: {question : question.question, reponse : question.reponse, statut : question.statut} }); //on aurai pu mettre juste set : question, mais ca modifie l'id et il aime pas
+      res.status(200).json({ ok: true });
+  } catch (err) {
+      console.log(err);
+      res.status(500).json({ message: err })
+  }
+});
+
+
+app.post('/questions', async(req,res,next) =>{
+  try{
+    let question = req.body;
+    question.status = "not set"
+    let db = await client.connect(url);
+    let dbo = db.db("kine_api");
+    let data = await dbo.collection("questions").insertOne(question);
+  }
+  catch(err){
+    console.log(err)
+    res.status(500).json({ ok: false})
+  }
+})
+
+app.listen(port, () => {
+    console.log(`L'application écoute le port ${port}`)
+  });
+  
+  
