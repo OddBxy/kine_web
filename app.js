@@ -9,6 +9,7 @@ app.use('/application', express.static('site'))
 app.use(cors({
   origin: "*",
   methods: ["GET", "POST", "DELETTE", "PUT"],
+  credentials: true
 }))
 
 let MongoClient = require('mongodb').MongoClient;
