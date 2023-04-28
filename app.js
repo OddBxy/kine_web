@@ -6,7 +6,10 @@ const cors = require('cors')
 app.use(express.json());
 //app.use(bodyParser.json());
 app.use('/application', express.static('site'))
-//app.use(cors())
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "DELETTE", "PUT"],
+}))
 
 let MongoClient = require('mongodb').MongoClient;
 let ServerApiVersion = require('mongodb').ServerApiVersion
