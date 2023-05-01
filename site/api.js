@@ -1,4 +1,4 @@
-let url = 'https://brave-jumpsuit-elk.cyclic.app/application'
+let url = 'https://brave-jumpsuit-elk.cyclic.app/questions'
 
 export async function getQuestions() {
     const res = await fetch(url, {method: 'GET'});
