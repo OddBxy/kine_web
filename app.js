@@ -61,7 +61,7 @@ app.delete('/questions/:id', async(req,res, next) =>{
 
 app.put('/questions/:id',async(req, res, next) => {
   let question = req.body;
-  question.statut = "set";
+  question.statut = "stored";
   try {
       let db = await client.connect(url);
       let dbo = db.db("kine_api");
@@ -78,7 +78,7 @@ app.put('/questions/:id',async(req, res, next) => {
 app.post('/questions', async(req,res,next) =>{
   try{
     let question = req.body;
-    question.status = "not set"
+    question.status = "not stored"
     let db = await client.connect(url);
     let dbo = db.db("kine_api");
     let data = await dbo.collection("questions").insertOne(question);
