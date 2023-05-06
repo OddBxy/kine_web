@@ -10,7 +10,6 @@ import { ContactComponent } from './component/contact/contact.component';
 import { Cabinet } from './model/cabinet';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { CalendarComponent } from './component/calendar/calendar.component';
 
 @NgModule({
   declarations: [
