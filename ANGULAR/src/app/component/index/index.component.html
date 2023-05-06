@@ -1,0 +1,53 @@
+<!--jusqua nest hub max,  apres il faut gerer le responsiv-->
+<div class="">
+    <div class="w-100 d-flex align-items-center justify-content-center" style="height: 25em; background-image: url(/assets/200B-Bern_Region-822x411.jpg); background-size: cover; background-position-y: 60% ;">
+        <h2 class="w-75" style="color: azure;">"LE MOUVEMENT CRÉE L'ÉNERGIE, L'ÉNERGIE CRÉE LA MOTIVATION, LA MOTIVATION CRÉE LE SUCCÈS." - LANCE ARMSTRONG</h2>
+    </div>
+    
+    <!--les pathologies-->
+    <div class="col p-5">
+        <h3>Les pathologies que nous prenons en charges :</h3>
+        <div class="d-flex flex-row justify-content-around" style="margin-top: 4em;">
+            <div class="card" *ngFor="let pathologie of pathologies" style="width: 30%;">
+                <img class="card-img-top" style="height: 15em; background-size: cover; background-position-y: 60% ; background-image: url('{{pathologie.image_source}}')" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">{{pathologie.nom}}</h5>
+                  <p class="card-text">{{pathologie.resum_descriptif}}</p>
+                  <p class="card-text">{{pathologie.maladie}}</p>
+                  <button type="button" class="btn btn-outline-primary btn-lg" (click)="goToPathologies()">En savoir +</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--l'équipe-->
+    <div class="p-5 row" > <!-- style="background: linear-gradient(transparent , rgb(0, 79, 124) );" -->
+
+        <div class="col-5" style="background-color: aqua; height: 20em;" >
+
+        </div>
+        <div class="col-6 offset-1 d-flex flex-column justify-content-around">
+            <h3 class="">Qui sommes nous ?</h3>
+            <div> Nous sommes une équipe de kinésithérapeute qui peut être efficace sur plusieurs domaines du médical et pouvoir agir sur tous les maux de nos patients.</div>
+            <button type="button" class="btn btn-outline-light btn-lg w-25" (click)="goToCabinet()">En savoir +</button>
+        </div>
+    </div>
+
+    <!--FAQ-->
+    <div class="p-5 d-grid gap-5">
+        <h3>Les questions fréquentes : </h3>
+        <div class="col-6" style="margin: auto" *ngIf="questions.length > 0">
+            <div >
+                <div class="d-grid gap-3">
+                    <h4> {{getSlide().nom}} {{getSlide().prenom}} : </h4>
+                    <p>QUESTION : {{getSlide().question}}</p> 
+                    <p>REPONSE : {{getSlide().reponse}}</p>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="questions.length == 0" style="margin: auto;">
+            <h5>No questions available</h5>
+        </div>
+    </div>
+</div>
+
