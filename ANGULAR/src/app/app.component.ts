@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Cabinet } from './model/cabinet';
-import { calendar } from 'googleapis/build/src/apis/calendar';
+//import { calendar } from 'googleapis/build/src/apis/calendar';
 
 @Component({
   selector: 'app-root',
