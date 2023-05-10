@@ -13,7 +13,7 @@ export async function removeQuestion(question) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(question)
-    );
+    });
     return res.json();
 }
 
