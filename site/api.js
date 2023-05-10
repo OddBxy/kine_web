@@ -9,6 +9,10 @@ export async function removeQuestion(question) {
     console.log(question);
     const res = await fetch(url + question._id, {
         method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(question)
     );
     return res.json();
 }
