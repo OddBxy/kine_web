@@ -4,7 +4,6 @@ export class question_model {
 
     elementParentHTML;
     question;
-    let reponse;
 
     constructor(question) {
         this.question = question;
@@ -15,7 +14,7 @@ export class question_model {
 
         let question_info = document.createElement('div');
         question_info.classList.add("col-6")
-        reponse = document.createElement('div')
+        let reponse = document.createElement('div')
         reponse.classList.add("col-6")
 
         this.elementParentHTML.appendChild(question_info);
@@ -117,11 +116,7 @@ export class question_model {
     }
 
     async update() {
-        let verif = reponse.querySelector("input");
-        if(verif.value ===""){
-         this.question.reponse = document.getElementById(''+this.question._id).value
-         await updateQuestion(this.question);   
-        }
-        else alert("Veuillez entrer une réponse");
+        this.question.reponse = document.getElementById(''+this.question._id).value
+        await updateQuestion(this.question);   
     }
 }
