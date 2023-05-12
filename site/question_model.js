@@ -49,13 +49,13 @@ export class question_model {
         let title_reponse = document.createElement('h6');
         title_reponse.classList.add("col-2")
         title_reponse.textContent = "Réponse :"
-        let reopnse = document.createElement('p');
-        reponse.classList.add("col-10")
-        reponse.textContent = question.reponse;
+        let answer = document.createElement('p');
+        answer.classList.add("col-10")
+        answer.textContent = question.reponse;
         
         question_reponse.classList.add("row");
         question_reponse.appendChild(title_reponse);
-        question_reponse.appendChild(reponse);
+        question_reponse.appendChild(answer);
 
         info.appendChild(question_content);
         info.appendChild(question_statut);
