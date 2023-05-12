@@ -56,10 +56,23 @@ export class question_model {
         question_reponse.classList.add("row");
         question_reponse.appendChild(title_reponse);
         question_reponse.appendChild(answer);
+        
+        let question_auteur =  document.createElement('div');
+        let title_auteur = document.createElement('h6');
+        title_auteur.classList.add("col-2")
+        title_auteur.textContent = "Auteur :"
+        let auteur = document.createElement('p');
+        auteur.classList.add("col-10")
+        auteur.textContent = question.nom + " " + question.prenom;
+        
+        question_auteur.classList.add("row");
+        question_auteur.appendChild(title_auteur);
+        question_auteur.appendChild(auteur);
 
         info.appendChild(question_content);
         info.appendChild(question_statut);
         info.appendChild(question_reponse);
+        info.appendChild(question_auteur);
         question_info.classList.add("d-grid");
         question_info.appendChild(info)
 
