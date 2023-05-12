@@ -45,8 +45,21 @@ export class question_model {
         question_statut.appendChild(title2);
         question_statut.appendChild(statut);
 
+        let question_reponse =  document.createElement('div');
+        let title_reponse = document.createElement('h6');
+        title_reponse.classList.add("col-2")
+        title_reponse.textContent = "Réponse :"
+        let reopnse = document.createElement('p');
+        reponse.classList.add("col-10")
+        reponse.textContent = question.reponse;
+        
+        question_reponse.classList.add("row");
+        question_reponse.appendChild(title_reponse);
+        question_reponse.appendChild(reponse);
+
         info.appendChild(question_content);
-        info.appendChild(question_statut)
+        info.appendChild(question_statut);
+        info.appendChild(question_reponse);
         question_info.classList.add("d-grid");
         question_info.appendChild(info)
 
