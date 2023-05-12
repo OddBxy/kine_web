@@ -36,10 +36,10 @@ export class question_model {
         let question_statut = document.createElement('div');
         let title2 = document.createElement('h6');
         title2.classList.add("col-2")
-        title2.textContent = "Statut :"
+        title2.textContent = "Status :"
         let statut = document.createElement('p');
         statut.classList.add("col-10")
-        statut.textContent = question.statut;
+        statut.textContent = question.status;
 
         question_statut.classList.add("row")
         question_statut.appendChild(title2);
