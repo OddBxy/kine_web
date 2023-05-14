@@ -1,0 +1,11 @@
+#image{
+    height: 40em;
+    color: white;
+    background-size: cover; 
+}
+
+@media only screen and (max-width: 1200px) {
+    #image {
+        height: 30em;
+    }
+}

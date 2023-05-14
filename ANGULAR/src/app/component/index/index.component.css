@@ -1,0 +1,17 @@
+.pathologie{
+    width: 30%;
+}
+
+@media only screen and (max-width: 1200px) {
+    #equipe {
+        display: grid;
+        grid-column: 1;
+        grid-row: 2;
+        gap: 3em;
+    }
+    .pathologie{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

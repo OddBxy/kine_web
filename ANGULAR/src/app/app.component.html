@@ -1,0 +1,49 @@
+<!--NAVBAR-->
+<nav class="navbar fixed-top bg-primary">
+    <div class="m-2 offset-md-4">
+        <h6 class="p-0 text-white">nom de site</h6>
+    </div>
+    <div class="nav row w-25">
+        <button class="col d-flex justify-content-center align-items-center" style="background-color: transparent; border: none;" (click)="goToIndex()">
+           <h6 class="m-0 text-white">Accueil</h6>
+        </button>
+        <button class="col d-flex justify-content-center align-items-center" style="background-color: transparent; border: none;" (click)="goToPathologies()">
+            <h6 class="m-0 text-white">Pathologie</h6>
+        </button>
+        <button class="col d-flex justify-content-center align-items-center" style="background-color: transparent; border: none;" (click)="goToCabinet()">
+            <h6 class="m-0 text-white">Cabinet</h6>
+        </button>
+        <button class="col d-flex justify-content-center align-items-center" style="background-color: transparent; border: none;" (click)="goToContact()">
+            <h6 class="m-0 text-white">Contact</h6>
+        </button>
+    </div>
+</nav>
+<nav class="navbar">
+    <div class="m-2 offset-md-4">
+        &nbsp;
+    </div>
+</nav>
+
+<!--COMPONENT HTML-->
+<router-outlet> </router-outlet>
+
+
+
+<!--footer-->
+<div class="p-xl-5 p-3 d-xl-inline-flex col-xl-12 d-grid" style="background-color: rgb(0, 79, 124);">
+    <div class="col-xl-6 col-12" style="color: azure;"> 
+        <h3>Information pratiques :</h3> 
+        <ul class="m-5">
+            <li>
+                {{infos.Adresse}}
+            </li>
+            <li>
+                {{infos.Jour}}
+            </li>
+            <li>
+                {{infos.Horaire}}
+            </li>
+        </ul>
+    </div>
+    <iframe class="col-xl-6 col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.7900593157055!2d5.189451151023416!3d43.548417979022446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9fae4cbd07733%3A0x1615aaae69595c6c!2s450%20Rue%20Aubanel%2C%2013580%20La%20Fare-les-Oliviers!5e0!3m2!1sfr!2sfr!4v1681227851288!5m2!1sfr!2sfr" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>

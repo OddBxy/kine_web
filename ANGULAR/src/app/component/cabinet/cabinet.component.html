@@ -1,0 +1,38 @@
+<!--equipe-->
+<div class="p-xl-5 p-3">
+    <div class="d-flex flex-xl-row flex-column" id="equipe">
+        <div class="col-xl-6">
+            <div id="photo_equipe">photo</div>
+        </div>
+        <div class="col-xl-6 d-grid gap-3" id="descriptif">
+            <h3>Notre Equipe :</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste ipsa rem eos voluptatibus, iure consequuntur sit, officia similique exercitationem modi quas accusamus odio. Error saepe fuga aperiam, aut perferendis reprehenderit!</p>
+        </div>
+    </div>
+    <div class="d-xl-flex flex-xl-row justify-content-around d-grid" id="membres">
+        <div class="card membre_info" *ngFor="let membre of membres" style="background-image: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 100%),url('{{membre.image_source}}');">
+            <div  class="image_membre"> <!--background image cover url = membre.image_source--></div>
+            <div class="card-body d-grid overflow-auto" style="max-height: 15em;">
+              <h5 class="card-title">{{membre.nom}}</h5>
+              <ul>
+                <li *ngFor="let attribut of membre.attribut" class="card-text"> {{attribut}}</li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--equipememnt-->
+<div class="p-xl-5 p-3 d-grid gap-4">
+    <h3>Notre cabinet et ses equipements :</h3>
+    <div class="d-grid gap-4">
+        <div *ngFor="let equipement of equipements" class="d-flex flex-xl-row flex-column border rounded">
+            <img class="col-xl-4 image" style="background-image: url('{{equipement.image_source}}');">
+            <div class="col-xl-6 d-grid gap-3 p-3">
+                <h5>{{equipement.nom}} :</h5>
+                <p class="offset-1">{{equipement.descriptif}}</p>
+                <p class="offset-1">{{equipement.utilisation}}</p>
+            </div>
+        </div>
+    </div>
+</div>

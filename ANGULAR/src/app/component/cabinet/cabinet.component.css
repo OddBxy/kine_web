@@ -1,0 +1,59 @@
+.image{
+    max-width: 28.5%; 
+    background-size: cover;
+    aspect-ratio: 4/3; 
+    object-fit: contain;
+}
+
+#equipe{
+    padding-left: 4%; 
+    padding-right: 4%;
+}
+
+#photo_equipe{
+    background-color: red; 
+    width: 80%;
+}
+
+#membres{
+    max-height: 35em; 
+    margin-top: 3em;
+}
+
+.membre_info{
+    background-size: cover;
+    background-position-x: 55% ; 
+    width: 25%; 
+    color: #fff;
+}
+.image_membre{
+    height: 15em;
+}
+
+@media only screen and (max-width: 1200px) {
+    .image{
+        max-width: 100%;
+    }
+    #equipe{
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    #photo_equipe{
+        width: 100%;
+    }
+    #descriptif{
+        margin-top: 2em;
+    }
+    #membres{
+        max-height: none;
+    }
+
+    .membre_info{
+        width: 100%;
+        height: 20em;
+        margin-top: 2em;
+    }
+    .image_membre{
+        height: 10em;
+    }
+}
