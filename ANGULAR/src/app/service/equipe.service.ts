@@ -16,8 +16,8 @@ export class EquipeService {
       ],
       tel : "04.90.42.46.01",
       mail : "stephanievallet@wanadoo.fr",
-      image_source : "/assets/tete.jpg",
-      lien : 'GoogleCalendar'
+      image_source : "/assets/Vallet.PNG",
+      lien : 'https://www.doctolib.fr/masseur-kinesitherapeute/la-fare-les-oliviers/stephanie-maurial-vallet'
     },
     {
       nom : 'Campinas Yan',
@@ -28,7 +28,7 @@ export class EquipeService {
       ],
       tel : "06.22.26.45.05",
       mail : '',
-      image_source : "/assets/tete.jpg",
+      image_source : "/assets/Campinas.PNG",
       lien : 'https://www.doctolib.fr/masseur-kinesitherapeute/la-fare-les-oliviers/yan-campinas-la-fare-les-oliviers'
     },
     {
@@ -40,7 +40,7 @@ export class EquipeService {
       ],
       tel : "06.40.34.50.26",
       mail : 'lauremk74@gmail.com',
-      image_source : "/assets/tete.jpg",
+      image_source : "/assets/Bodoignet.PNG",
       lien: 'GoogleCalendar'
     }
   ]
