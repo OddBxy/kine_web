@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Cabinet } from './model/cabinet';
+import { NgModel } from '@angular/forms';
 //import { calendar } from 'googleapis/build/src/apis/calendar';
 
 @Component({
@@ -10,6 +11,8 @@ import { Cabinet } from './model/cabinet';
 })
 export class AppComponent {
   title = 'site';
+
+  verif = 0;
 
   infos : Cabinet = {
     Adresse : '450 Rue Aubanel, 13580 La Fare-les-Oliviers',
@@ -33,4 +36,14 @@ export class AppComponent {
     this.router.navigate(['/', 'contact']);
   }
 
+  dropDown(){
+    if (this.verif == 0) {
+      this.verif = 1
+    }
+    else if(this.verif == 1){
+      this.verif = 0
+    }
+    
+  }
 }
+
