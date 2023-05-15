@@ -1,5 +1,5 @@
 <!--NAVBAR-->
-<nav class="navbar fixed-top bg-primary">
+<nav class="navbar fixed-top bg-primary" id="pre_responsiv">
     <div class="m-2 offset-md-4">
         <h6 class="p-0 text-white">nom de site</h6>
     </div>
@@ -23,6 +23,31 @@
         &nbsp;
     </div>
 </nav>
+
+<nav class="navbar fixed-top bg-primary" id="post_responsiv">
+    <div class="m-2 offset-md-4">
+        <h6 class="p-0 text-white">nom de site</h6>
+    </div>
+    <button class="btn btn-secondary btn-sm m-2" type="button" id="dropdown" (click)="dropDown()">
+        &#8801;
+    </button>
+    <div [style.display]="verif == 0 ? 'none' : 'flex'" class="col-12 flex-column">
+        <button class="col d-flex justify-content-center align-items-center dropdown-item" style="background-color: transparent; border: none;" (click)="goToIndex()">
+           <h6 class="m-0 text-white">Accueil</h6>
+        </button>
+        <button class="col d-flex justify-content-center align-items-center dropdown-item" style="background-color: transparent; border: none;" (click)="goToPathologies()">
+            <h6 class="m-0 text-white">Pathologie</h6>
+        </button>
+        <button class="col d-flex justify-content-center align-items-center dropdown-item" style="background-color: transparent; border: none;" (click)="goToCabinet()">
+            <h6 class="m-0 text-white">Cabinet</h6>
+        </button>
+        <button class="col d-flex justify-content-center align-items-center dropdown-item" style="background-color: transparent; border: none;" (click)="goToContact()">
+            <h6 class="m-0 text-white">Contact</h6>
+        </button>
+    </div>
+</nav>
+
+
 
 <!--COMPONENT HTML-->
 <router-outlet> </router-outlet>
