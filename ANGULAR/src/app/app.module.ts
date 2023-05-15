@@ -25,8 +25,7 @@ import { CalendarComponent } from './component/calendar/calendar.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    ScrollingModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
