@@ -24,15 +24,19 @@ export class AppComponent {
   }
 
   goToIndex() {
+    this.verif = 0;
     this.router.navigate(['']);
   }
   goToPathologies() {
+    this.verif = 0;
     this.router.navigate(['/', 'pathologie']);
   }
   goToCabinet() {
+    this.verif = 0;
     this.router.navigate(['/', 'cabinet']);
   }
   goToContact() {
+    this.verif = 0;
     this.router.navigate(['/', 'contact']);
   }
 
