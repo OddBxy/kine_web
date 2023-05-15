@@ -1,0 +1,15 @@
+#post_responsiv{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #pre_responsiv{
+        display: none;
+    }
+
+    #post_responsiv{
+        display: flex;
+        flex-direction: row;
+    }
+}
