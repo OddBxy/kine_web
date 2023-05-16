@@ -4,6 +4,7 @@ import { Pathologie } from 'src/app/model/pathologie';
 import { question } from 'src/app/model/question';
 import { PathologieService } from 'src/app/service/pathologie.service';
 import { QuestionService } from 'src/app/service/question.service';
+import { PathologieComponent } from '../pathologie/pathologie.component';
 
 @Component({
   selector: 'app-index',
@@ -11,7 +12,7 @@ import { QuestionService } from 'src/app/service/question.service';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent {
-  constructor(private router: Router, private questionService: QuestionService) {}
+  constructor(private router: Router, private questionService: QuestionService, private pathologieComponent : PathologieComponent, private pathologieService : PathologieService) {}
 
   pathologies : Array<Pathologie> = [];
   questions : Array<question> = [];
@@ -23,8 +24,9 @@ export class IndexComponent {
     this.recupQuestion();
   }
 
-  goToPathologies() {
+  goToPathologies(index: number) {
     this.router.navigate(['/', 'pathologie']);
+    this.pathologieService.setIndex(index);
   }
   goToCabinet() {
     this.router.navigate(['/', 'cabinet']);
