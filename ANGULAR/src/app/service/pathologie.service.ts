@@ -8,9 +8,9 @@ export class PathologieService {
 
   static pathologies : Array<Pathologie> = [
     {
-      nom : "Pathologie Neurologique",
-      descriptif : "Touche le système nerveux, central ou périphérique. Elle peut donc affecter des cellules nerveuses se trouvant dans le cerveau, la moelle épinière, les nerfs périphériques, les jonctions neuromusculaires, le système nerveux autonome...",
-      resum_descriptif: "Type de trouble du système nerveux qui affecte le cerveau et les neurones",
+      nom : "Pathologies Neurologiques",
+      descriptif : "Touche le système nerveux, central ou périphérique. Elle peut donc affecter des cellules nerveuses se trouvant dans le cerveau, la moelle épinière, les nerfs périphériques, les jonctions neuromusculaires, le système nerveux autonome...\n Le kiné prend en charge l'hémiplégique post AVC, la paraplégie, la sclérose en plaque, les IMC, ...",
+      resum_descriptif: "Troubles du système nerveux central ou périphérique dû à un accident ou une pathologie",
       maladie: "Post AVC, hémiplégies, paraplègies, syndrome cerebelleux, imc, sclérose en plaque",
       image_source : "/assets/Neurologique.jpg"
     },
