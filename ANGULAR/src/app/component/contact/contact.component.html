@@ -25,7 +25,7 @@
               </div>
               <container-element [ngSwitch]=membre.lien style="height: 30%;">
                 <button *ngSwitchCase="'GoogleCalendar'" type="button" class="btn btn-primary btn-lg m-3" target="_blank" (click)="goToCalendar()">PRENDRE RDV</button>
-                <div *ngSwitchCase="''">Merci de prendre contact avec les informations si dessus</div>
+                <div *ngSwitchCase="''">Merci de prendre contact avec les informations ci-dessus</div>
                 <a *ngSwitchDefault class="btn btn-primary btn-lg m-3" target="_blank" href={{membre.lien}}>PRENDRE RDV</a>
               </container-element>
             </div>
@@ -51,7 +51,7 @@
       <div id="emailHelp" class="form-text">Vos mails resteront confidentiels</div>
     </div>
     <div class="mb-3">
-      <label for="question" class="form-label">question:</label>
+      <label for="question" class="form-label">Question:</label>
       <textarea type="text" class="form-control" id="question" name="question" [(ngModel)]="newQuestion.question"></textarea>
     </div>
     <button class="btn btn-primary col-4" (click)='submit_question()'>Soumettre</button>
