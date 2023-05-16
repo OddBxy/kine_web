@@ -35,7 +35,7 @@ export class EquipeService {
       nom : 'Bodoignet Laure',
       attribut : [
         'MKDE Diplomée en : 2021',
-        'Spécialités : pédiatrie (notamment chez les enfants de 0 à 6 ans)',
+        'Spécialité : pédiatrie (notamment chez les enfants de 0 à 6 ans)',
         'Lieu de travail : Cabinet ou à domicile'
       ],
       tel : "06.40.34.50.26",
