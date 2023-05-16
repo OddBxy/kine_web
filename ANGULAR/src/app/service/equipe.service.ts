@@ -11,7 +11,7 @@ export class EquipeService {
       nom : 'Maurial-Vallet Stéphanie',
       attribut : [
         'MKDE Diplomée en : 1996',
-        "Spécialisation : réeducation périnéale, réeducation des pathologies de l'épaule, réeducation du post cancer du sein",
+        "Spécialités : réeducation périnéale, réeducation des pathologies de l'épaule, réeducation du post cancer du sein",
         'Lieu de travail : Cabinet ou à domicile'
       ],
       tel : "04.90.42.46.01",
@@ -35,7 +35,7 @@ export class EquipeService {
       nom : 'Bodoignet Laure',
       attribut : [
         'MKDE Diplomée en : 2021',
-        'Spécialisation : pédiatrie (notamment chez les enfants de 0 à 6 ans)',
+        'Spécialités : pédiatrie (notamment chez les enfants de 0 à 6 ans)',
         'Lieu de travail : Cabinet ou à domicile'
       ],
       tel : "06.40.34.50.26",
