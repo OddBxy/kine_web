@@ -29,7 +29,7 @@ export class EquipeService {
       tel : "06.22.26.45.05",
       mail : '',
       image_source : "/assets/Campinas.PNG",
-      lien : 'https://www.doctolib.fr/masseur-kinesitherapeute/la-fare-les-oliviers/yan-campinas-la-fare-les-oliviers'
+      lien : ''
     },
     {
       nom : 'Bodoignet Laure',
