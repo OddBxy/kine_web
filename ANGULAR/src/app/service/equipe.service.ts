@@ -10,8 +10,8 @@ export class EquipeService {
     {
       nom : 'Maurial-Vallet Stéphanie',
       attribut : [
-        'Diplomé en : 1996',
-        "Spécialisation : réeducation périnéal, réeducation de l'épaule, réeducation du cancer du sein",
+        'MKDE Diplomée en : 1996',
+        "Spécialisation : réeducation périnéale, réeducation des pathologies de l'épaule, réeducation du post cancer du sein",
         'Lieu de travail : Cabinet ou à domicile'
       ],
       tel : "04.90.42.46.01",
@@ -22,8 +22,8 @@ export class EquipeService {
     {
       nom : 'Campinas Yan',
       attribut : [
-        'Diplomé en : 2000',
-        'Spécialisation : Ostéopathie',
+        'MKDE Diplomé en : 2000',
+        'Spécialité : Ostéopathie',
         'Lieu de travail : Cabinet ou à domicile'
       ],
       tel : "06.22.26.45.05",
@@ -34,7 +34,7 @@ export class EquipeService {
     {
       nom : 'Bodoignet Laure',
       attribut : [
-        'Diplomé en : 2021',
+        'MKDE Diplomée en : 2021',
         'Spécialisation : pédiatrie (notamment chez les enfants de 0 à 6 ans)',
         'Lieu de travail : Cabinet ou à domicile'
       ],
