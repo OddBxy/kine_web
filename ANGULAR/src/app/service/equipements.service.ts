@@ -9,20 +9,20 @@ export class EquipementsService {
   static equipements : Array<Equipement> = [
     {
       nom : "Ondes de choc",
-      descriptif : "Il s’agit d’une technique de soin pour soigner les tendinopathies.",
+      descriptif : "Il s’agit de traiter rapidement les tendinopathies, les calcifications tendineuses, les épines calcannéennes et ....",
       utilisation : "A l’origine utilisées en urologie pour traiter les calculs rénaux, les ondes de choc permettent aujourd’hui de favoriser la consolidation osseuse et de prendre en charge diverses lésions musculo-squelettiques.",
       image_source :"/assets/Onde-choc.jpg"
     },
     {
-      nom : "Phenix",
-      descriptif : "C'est un électrostimulateur. Il est constitué d’un ou plusieurs POD stim/bio.",
+      nom : "Phoenix",
+      descriptif : "Appareil d'électrostimulation et de biofeedback necessaire dans la réeducation périnéale, et dans les douleurs aigües.",
       utilisation : "Vous pouvez donc stimuler le quadriceps de votre patient",
       image_source :"/assets/Phoenix.jpg"
     },
     {
       nom : "Cellu M6 de LPG",
-      descriptif : "Permet de procurer des soins sur des problématiques liées à la peau et aux tissus.",
-      utilisation : "Elle va agir en surface, de l’extérieur du corps vers l’intérieur du corps, jusque sur les tissus et les muscles",
+      descriptif : "Appareil permettant l'endermologie.",
+      utilisation : "Cela permet de combattre la cellulite en agissant sur les couches profondes de la peau et de destocker la réserve adipeuses et les capitons. Cela peut très bien être utilisé pour combatre le veillissement cutané.",
       image_source :"/assets/M6-LPG.jpg"
     },
     {
@@ -33,7 +33,7 @@ export class EquipementsService {
     },
     {
       nom : "Hydrojet",
-      descriptif : "L'hydrojet apporte de nombreux bienfaits au corps et à l'esprit. Il tonifie et raffermit le corps, réduit tensions et douleurs et procure un bien-être général.",
+      descriptif : "C'est une table de massage sur baignoire avec des jets puissants qui parcourent le corps.",
       utilisation : "La table de massage Hydrojet est la seule capable de masser la totalité du corps. En fonction des réglages, il est possible de toucher certaines zones bien précises. Des jambes à la nuque, la table hydro active peut concentrer les jets d’eau sur certaines parties du corps.",
       image_source :"/assets/Hydrojet.jpg"
     },
