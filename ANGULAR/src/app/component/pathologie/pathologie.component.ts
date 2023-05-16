@@ -4,18 +4,22 @@ import { Pathologie } from 'src/app/model/pathologie';
 import { Methode } from 'src/app/model/methode';
 import { PathologieService } from 'src/app/service/pathologie.service';
 import { MethodesService } from 'src/app/service/methodes.service';
+import { Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-pathologie',
   templateUrl: './pathologie.component.html',
   styleUrls: ['./pathologie.component.css']
 })
+@Injectable({
+  providedIn: 'root'
+})
 export class PathologieComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private pathologieService : PathologieService) {}
 
   pathologies : Array<Pathologie> = [];
   methodes : Array<Methode> = [];
-  i=0;
+  i= this.pathologieService.getIndex();
   ngOnInit(){
     this.pathologies = PathologieService.getPathologies();
     this.methodes = MethodesService.getMethode();
@@ -37,4 +41,6 @@ export class PathologieComponent {
     }
     else this.i += 1;
   }
+
 }
+
