@@ -16,8 +16,8 @@ export class AppComponent {
 
   infos : Cabinet = {
     Adresse : '450 Rue Aubanel, 13580 La Fare-les-Oliviers',
-    Jour : 'Lundi, Mardi, Jeudi et Vendredi' ,
-    Horaire : '8h à 19h'
+    Jour : 'Du lundi au vendredi' ,
+    Horaire : '9h à 19h'
   }
 
   constructor(private router: Router) {
