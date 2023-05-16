@@ -15,16 +15,16 @@ export class PathologieService {
       image_source : "/assets/Neurologique.jpg"
     },
     {
-      nom : "Pathologie Rhumatologique",
-      descriptif : "Spécialité qui traite des pathologies articulaires, osseuses et musculaires : les rhumatismes. Ces pathologies sont donc très variées, selon l’âge et le type d’activité pratiquée.",
-      resum_descriptif: "Affecte les articulations, les os et les muscles",
+      nom : "Pathologies Rhumatologiques",
+      descriptif : "Ce sont des troubles du système osseux et cartilegien du corps du l'âge et aux différentes contraintes physiques. Le kiné va donc essayer d'améliorer l'état des patients atteint d'arthrose, d'arthrite, de spondylarthrite ankylosante, du rhumatisme articulaire aigü, de lombalgie chronique",
+      resum_descriptif: "Les pathologies rhumatologiques sont des problèmes articulaires, osseus et musculaires. Ces pathologies sont donc très variées, selon l’âge et le type d’activité pratiquée.",
       maladie: "Arthrose, arthrite, spondylarthrite ankylosante, lombalgie chronique",
       image_source : "/assets/Rhumatologique.jpg"
     },
     {
-      nom : "Pathologie Orthopédique",
-      descriptif : "Spécialité chirurgicale qui permet de corriger les défauts de l’appareil locomoteur de nature congénitale ou acquise durant la croissance voire à l’âge adulte.",
-      resum_descriptif: "Affecte l’ensemble du squelette osseux",
+      nom : "Pathologies Orthopédiques",
+      descriptif : "Troubles de la statique osseuse et musculaire causés par des traumatismes exterieures tel que des blessures exterieurs, des malformations congénitales, des problèmes de croissance .... Dans ces cas le kiné va aider à récuperer des amplitudes de mouvement après des fractures, des tendinites et autres.",
+      resum_descriptif: "Troubles qui affectent le système musculo-squelettique, pouvant affecter différentes parties du corps, notamment la colonne vertébrale, les membres supérieurs et inférieurs",
       maladie: "Scoliose, fracture, tendinopathie, prothèse",
       image_source : "/assets/Orthopedique.jpg"
     }
