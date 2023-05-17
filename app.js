@@ -62,7 +62,7 @@ app.delete('/questions/:id', async(req,res, next) =>{
 
 app.put('/questions/:id',async(req, res, next) => {
   let question = req.body;
-  question.statut = "stored";
+  question.status = "stored";
   try {
       let db = await client.connect(url);
       let dbo = db.db("kine_api");
