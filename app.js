@@ -67,7 +67,7 @@ app.put('/questions/:id',async(req, res, next) => {
       let db = await client.connect(url);
       let dbo = db.db("kine_api");
       console.log(req.body)
-      let retour = await dbo.collection("questions").updateOne({ _id: new mongodb.ObjectId(question._id) }, { $set: {question : question.question, reponse : question.reponse, statut : question.statut} }); //on aurai pu mettre juste set : question, mais ca modifie l'id et il aime pas
+      let retour = await dbo.collection("questions").updateOne({ _id: new mongodb.ObjectId(question._id) }, { $set: {question : question.question, reponse : question.reponse, statut : question.status} }); //on aurai pu mettre juste set : question, mais ca modifie l'id et il aime pas
       res.status(200).json({ ok: true });
   } catch (err) {
       console.log(err);
